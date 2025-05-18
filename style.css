@@ -203,3 +203,83 @@ body {
     .stroke:nth-child(7){
         animation-delay: 0s;
     }
+    /* Планшеты (ширина экрана до 768px) */
+@media (max-width: 768px) {
+  .player {
+    height: auto; /* чтобы высота не была фиксированной */
+    padding: 20px;
+  }
+  .wrapper {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+  }
+  .track-art {
+    height: 180px;
+    width: 180px;
+    margin: 15px;
+  }
+  .track-name {
+    font-size: 2rem;
+  }
+  .track-artist {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    margin-bottom: 20px;
+  }
+  .playpause-track i {
+    font-size: 4rem !important;
+  }
+  .seek_slider {
+    width: 70%;
+  }
+  .volume_slider {
+    width: 40%;
+  }
+}
+
+/* Мобильные телефоны (ширина экрана до 480px) */
+@media (max-width: 480px) {
+  .player {
+    padding: 10px;
+  }
+  .wrapper {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .track-art {
+    height: 140px;
+    width: 140px;
+    margin: 10px;
+  }
+  .track-name {
+    font-size: 1.5rem;
+  }
+  .track-artist {
+    font-size: 1rem;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons > div {
+    padding: 15px;
+  }
+  .playpause-track i {
+    font-size: 3rem !important;
+  }
+  .seek_slider {
+    width: 80%;
+  }
+  .volume_slider {
+    width: 50%;
+  }
+  .current-time, .total-duration {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .now-playing {
+    font-size: 0.9rem;
+  }
+}
