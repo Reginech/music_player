@@ -128,7 +128,9 @@ function nextTrack(){
         track_index = 0;
     }
     loadTrack(track_index);
+    if(isPlaying) {
     playTrack();
+    }
 }
 function prevTrack(){
     if(track_index > 0){
